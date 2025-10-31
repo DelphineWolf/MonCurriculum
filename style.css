@@ -1,112 +1,123 @@
 
-   body {
+ /* ===== Reset et style global ===== */
+body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background: #f4f4f4;
     color: #333;
+    line-height: 1.3; /* un peu plus compact */
+    font-size: 13px;  /* globalement plus petit */
 }
 
+/* ===== Container ===== */
 .container {
     max-width: 900px;
-    margin: 50px auto;
-    background: #fff;
-    padding: 40px;
+    margin: 20px auto;   /* moins d'espace haut/bas */
+    padding: 20px;       /* moins de padding intérieur */
     display: grid;
-    grid-template-columns: 1fr 2fr; /* colonne gauche plus étroite, droite plus large */
-    gap: 40px;
+    grid-template-columns: 1fr 2fr; /* colonne gauche plus étroite */
+    gap: 20px;           /* moins d'espacement entre colonnes */
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background: #fff;
 }
 
+/* ===== Header ===== */
 .header {
     grid-column: span 2;
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .header h1 {
-    font-size: 50px;
+    font-size: 38px;
     margin: 0;
 }
 
 .header h2 {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: normal;
     color: #555;
-    margin: 5px 0 20px 0;
+    margin: 5px 0 10px 0;
 }
 
 .header p {
-    font-size: 14px;
+    font-size: 12px;
     color: #777;
     margin: 2px 0;
 }
 
 .objective {
-    font-size: 16px;
+    font-size: 14px;
     color: #007ACC;
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
-
+/* ===== Photo ===== */
 .photo {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .photo img {
     width: 100%;
-    max-width: 200px;
-    border-radius:100px;
+    max-width: 150px; /* réduit pour gagner de la place */
+    border-radius: 50%;
 }
 
-/* sections de gauche */
+/* ===== Sections gauche ===== */
 .left-section {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
 }
 
-/* sections de droite */
+/* ===== Sections droite ===== */
 .right-section {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
 }
 
+/* ===== Titres sections ===== */
 h3 {
     border-bottom: 2px solid #333;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
-    font-size: 18px;
+    padding-bottom: 3px;
+    margin-bottom: 5px;
+    font-size: 16px;
 }
 
+/* ===== Sections ===== */
 .section {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .section ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .section li {
-    margin-bottom: 10px;
+    margin-bottom: 6px;
 }
 
+/* ===== Compétences et langues ===== */
 .skills, .languages {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 6px;
 }
 
 .skill, .language {
     background: #e0e0e0;
-    padding: 5px 10px;
+    padding: 4px 8px;
     border-radius: 5px;
-    font-size: 12px;
+    font-size: 11px;
 }
 
+/* ===== Langues avec points ===== */
 .language .dots {
     display: inline-block;
     margin-left: 5px;
